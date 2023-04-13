@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+#fullPageContent
+{
+	width: 100%;
+	margin: auto;
+	padding: 30px;
+	background-color: #dfd3d3;
+	font-family: 'Karla';
+	font-size: 18px;
+	text-align: center;
+	list-style-position: inside;
+}
+
+#partialPageContent
+{
+	background-color: #dfd3d3;
+	float: center;
+	width: 80%;
+	margin: auto;
+}
+
+
+
+
+
+
+table 
+{
+	border-spacing: 10px 0;
+	font-size: 20px;
+}
+
+
+
+
+
+#boldHeader
+{
+	padding: 5px;
+	font-size: 40px;
+}
+
+#primaryHeader
+{
+	padding: 5px;
+	font-size: 30px;
+}
+
+#secondaryHeader
+{
+	padding: 0px;
+	font-size: 24px;
+}
+
+
+
+
+
+
+#columnsBox
+{
+	float: center;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	border-radius: 15px 15px 15px 15px;
+	padding: 30px;
+	margin: 0px auto;
+	background-color: #817275;
+	color: #fdfbfe;
+}
+#column-left
+{
+	float: left;
+	width: 50%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: auto;
+}
+#column-right
+{
+	float: right;
+	width: 50%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: auto;
+}
+
+
+
+
+
+#form
+{
+	float: center;
+	width: 30%;
+	justify-content: center;
+	align-items: center;
+	border-radius: 15px 15px 15px 15px;
+	margin: 0px auto;
+	background-color: #817275;
+	color: #fdfbfe;
+}
+#form-left
+{
+	float: left;
+	width: 47.5%;
+	justify-content: right;
+	align-items: right;
+	text-align: right;
+}
+#form-divide
+{
+	float: center;
+	width: 5%;
+}
+#form-right
+{
+	float: right;
+	width: 47.5%;
+	justify-content: left;
+	align-items: left;
+	text-align: left;
+}
+.slider {
+	-webkit-appearance: none;
+	width: 70%;
+	height: 10px;
+	border-radius: 5px;
+	background: #ffece5;
+}
+
+.slider:hover 
+{
+	opacity: 1;
+}
+
+	.slider::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		appearance: none;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background: #dfd3d3;
+		cursor: pointer;
+	}
+
+.slider::-moz-range-thumb 
+{
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #04AA6D;
+	cursor: pointer;
+}

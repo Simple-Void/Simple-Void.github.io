@@ -1,0 +1,113 @@
+<script Language="Javascript">
+function review()
+{
+    var compName = document.getElementById("compName").value;
+    var review = document.getElementById("review").value;
+
+    if (compName == "") {
+        alert("you didn't give an organisation name")
+    } else {
+        alert("your review will be checked and uploaded if Prince likes it")
+    }
+}
+</script>
+
+<!DOCTYPE html>
+<div>
+    <table>
+        <tr>
+            <th><a style="text-decoration: none;" href="index.html">Home</a></th>
+            <th><a style="text-decoration: none;" href="qualifications.html">Qualifications</a></th>
+            <th><a style="text-decoration: none;" href="reviews.html">Reviews</a></th>
+        </tr>
+    </table>
+</div>
+<br>
+<body id="fullPageContent">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title>
+        Prince Technologies
+    </title>
+    <div id="boldHeader">
+        <u><b>Prince Audio // Visual Technologies</b></u>
+        <br>
+    </div>
+    <div id="secondaryHeader">
+        <b>prince has some happy customers</b>
+        <br><b><i>he has never admitted to any mistakes.</i></b>
+    </div>
+    <br>
+    <br>
+    <div id="partialPageContent">
+        <div id="columnsBox">
+            <img src="fiveStars.png" height="100px" alt="5 stars">
+            <div id="secondaryHeader">Sasha Sokolov</div><br>
+            Excellent<br>
+            Truly ok<br>
+            Very not bad<br>
+            <br>
+        </div>
+        <br>
+        <div id="columnsBox">
+            <img src="fiveStars.png" height="100px" alt="5 stars">
+            <div id="secondaryHeader">Leigh from Bunning's Warehouse</div><br>
+            He really did a proper bang up job, totally recommend<br>
+            Bunning's Warehouse - Lowest Prices Are Just The Beginning<br>
+            <br>
+        </div>
+        <br>
+        <div id="columnsBox">
+            <img src="fiveStars.png" height="100px" alt="5 stars">
+            <div id="secondaryHeader">New York Times</div><br>
+            A riveting read from start to finish.<br>
+            It really felt like he gripped me by the neck<br>
+            and told me to leave a five star review<br>
+            <br>
+            New No. 1 New York Times Bestseller<br>
+            <br>
+        </div>
+        <br>
+        <div id="columnsBox">
+            <img src="fiveStars.png" height="100px" alt="5 stars">
+            <div id="secondaryHeader">Cats Protection UK</div><br>
+            A very playful little cat, brought to us after being found in a wind-up radio<br>
+            History of fleas and tax evasion, medical history available upon request<br>
+            Looking for a good forever-home<br>
+            <br>
+        </div>
+        <br>
+        <div id="columnsBox">
+            <img src="fiveStars.png" height="100px" alt="5 stars">
+            <div id="secondaryHeader">Dobbie's Gardening Centre</div><br>
+            A great gardener, his favourite part of working with us was pruning the catnip<br>
+            A middling worker with appalling bad work ethic<br>
+            We hope he has a wonderful time when someone please takes him off our hands<br>
+            <br>
+        </div>
+        <br>
+        <br>
+        <div id="form">
+            <br>
+            <b><u>Leave a Review</u></b>
+            <br>
+            <br>
+            <img src="fiveStars.png" height="40px" alt="5 stars">
+            <div style="font-size: 14px; font-style: italic;">by leaving a review you agree to leave a 5-star review</div>
+            <br>
+            <div id="form-left">
+                Organisation Name: <br>
+                Review: <br>
+            </div>
+            <div id="form-divide"></div>
+            <div id="form-right">
+                <input type="text" id="compName" name="compName"><br>
+                <input type="text" id="review" name="review"><br>
+            </div>
+            <br style="clear:both;" />
+            <br>
+            <button type="button" onclick=review();>Submit Review</button>
+            <br>
+            <br>
+        </div>
+    </div>
+</body>
