@@ -1,0 +1,132 @@
+<script Language="Javascript">
+	function clickFunc() {
+		var jobDesc = document.getElementById("jobDesc").value;
+		var name = document.getElementById("name").value;
+        var expDate = document.getElementById("expiryDate").value;
+
+        if (jobDesc != "") {
+            if (name == "") {
+                alert("you haven't given a name!")
+			} else {
+				if (expDate.length < 4) {
+					alert("Prince thinks the date on your milk is too short...\nadd some more numbers to that and try again")
+				} else {
+                    window.scroll(0, 0)
+                    alert("Thank you " + name + "\nPrince will rob you for £2.39 equivalent value when he visits!\nHe is on his way to complete your job: '" + jobDesc + "'")
+                    document.getElementById('omw').innerHTML = 'Prince is on the way!'
+                }
+            }
+        } else {
+            alert("you haven't entered a job for Prince!")
+        }
+	}
+</script>
+
+
+<!DOCTYPE html>
+<div>
+	<table>
+		<tr>
+			<th><a style="text-decoration: none;" href="index.html">Home</a></th>
+			<th><a style="text-decoration: none;" href="qualifications.html">Qualifications</a></th>
+			<th><a style="text-decoration: none;" href="reviews.html">Reviews</a></th>
+		</tr>
+	</table>
+</div>
+<br>
+<body id="fullPageContent">
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<title>
+		Prince Technologies
+	</title>
+	<div>
+		<div id="boldHeader">
+			<u><b>Prince Audio // Visual Technologies</b></u>
+			<br>
+		</div>
+		<div id="secondaryHeader">
+			<br>
+			<b>many jobs too big,</b><b><i> but none too small!</i></b>
+		</div>
+		<div id="secondaryHeader"><p id="omw"> </p></div>
+	</div>
+
+	<b>DISCLAIMER:</b> This is not a website for <b><i>Prince Audio Visual LLC</i></b><br>
+	to view their site click <a href="https://princeav.com/">here</a>.
+	<br>
+
+	<br>
+	<div id="partialPageContent">
+		<div id="columnsBox">
+			<div id="column-left">
+				<br>
+				<b>Introducing Prince</b><br><br>
+				This is prince, your friendly audio / visual technician<br>
+				His expertise includes:<br>
+				<!--I did have an unorganised list here but it didn't centre properly? weird'-->
+				<br>
+				Technology Repair<br>
+				TV and Radio Installation<br>
+				Error Diagnosis<br>
+				Professional Wiring<br>
+				Counting to 20<br>
+				Home invasion<br>
+				Bank Fraud<br>
+				</ul>
+				<br>
+				and so much more!!
+			</div>
+
+			<div id="column-right">
+				<a href="https://www.google.com/search?q=audio+visual+technician+definition&oq=audio+visual+technician+definition&aqs=edge..69i57j0i22i30j0i390l5j69i64.5480j0j1&sourceid=chrome&ie=UTF-8">
+					<img src="PrinceIsQualified.png" height="384" alt="Prince the audio / visual technician">
+				</a>
+			</div>
+
+			<br style="clear:both;" />
+		</div>
+	</div>
+
+	<div id="secondaryHeader">
+		<br>
+		let him inside your home!
+		<br><b>low IQ, low safety, low fees</b>
+		<br>
+		<br>
+	</div>
+
+	<!--This is the form-->
+	<div id="form">
+		<br>
+		<div id="secondaryHeader"><b><u>Hire Him!</u></b></div><br>
+		<b>Job Information</b><br>
+		<div id="form-left">
+			Job description: <br>
+			Name: <br>
+		</div>
+		<div id="form-divide"></div>
+		<div id="form-right">
+			<input type="text" id="jobDesc" name="jobDesc-n"><br>
+			<input type="text" id="name" name="name-n"><br>
+		</div>
+		<br style="clear:both;" />
+		<br>
+
+		<b>Assorted Other Details</b><br>
+		<div id="form-left">
+			No. of dogs: <br>
+			Milk expiry date: <br>
+		</div>
+		<div id="form-divide"></div>
+		<div id="form-right">
+			<input type="text" id="seatbelt" name="seatbelt" maxlength="16"><br>
+			<input type="text" id="expiryDate" name="expiryDate" maxlength="5"><br>
+		</div>
+		<br style="clear:both;" />
+
+		<br>
+		<button type="button" onclick=clickFunc();>Submit Information</button>
+		<br>
+		<br>
+	</div>
+</body>
